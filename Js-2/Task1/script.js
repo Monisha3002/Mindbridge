@@ -1,0 +1,10 @@
+let num1=5;
+let num2=3;
+let sum=num1+num2;
+console.log("Sum:"+sum);
+let Difference=num1-num2;
+console.log("Difference:"+Difference);
+let product=num1*num2;
+console.log("Product:"+product);
+let Quotient=num1/num2;
+console.log("Quotient:"+Quotient);
