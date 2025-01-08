@@ -1,4 +1,4 @@
-let mark = parseFloat(prompt("Enter the mark:"));
+let mark = prompt("Enter the mark:");
 
 switch (true) {
     case (mark <= 100 && mark >= 90):
