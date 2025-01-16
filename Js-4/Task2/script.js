@@ -5,13 +5,13 @@ function groupByOddEven(numbers) {
 
   for (const num of numbers) {
     if (num % 2 === 0) {
-      result.even.push(num); 
+      result.even.push(num);
     } else {
-      result.odd.push(num);  
+      result.odd.push(num);
     }
   }
 
-  return result; 
+  return result;
 }
 
 const groupedNumbers = groupByOddEven(nums);

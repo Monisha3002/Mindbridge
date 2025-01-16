@@ -4,14 +4,10 @@ const data = [
     { id: 1, name: 'C' },
   ];
   
-  function removeDuplicatesById(array) {
-    const seenIds = new Set(); 
-    return array.filter(item => {
-      if (seenIds.has(item.id)) {
-        return false; 
-      }
-      seenIds.add(item.id); 
-      return true; 
+  function removeDuplicates(data) {
+    const seenIds = [];
+    return data.filter(function(item) {
+      return !seenIds.includes(item.id) && seenIds.push(item.id);
     });
   }
   
