@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt" onkeydown="totalkeyvalue(event)">
+    <button onclick="totalkey()">Submit</button>
+    <h2 id="ans">Total Keycount:</h2>
+</body>
+<Script>
+    let total = 0;
+function totalkeyvalue(a)
+{
+    total += a.keyCode;
+}
+function totalkey()
+{
+    document.getElementById("ans").innerHTML = "Total Count:"+ total;
+}
+
+document.addEventListener("keydown",function(event)
+{
+    if(event.key === 's' && event.ctrlKey)
+    {
+        event.preventDefault();
+        alert("Ctrl+s is disabled");
+    }
+});
+
+document.addEventListener("keydown",function(event)
+{
+    if(event.ctrlKey && event.shiftKey && event.key === 'Q')
+    {
+        alert('Do you want to close the window');
+        window.close();
+    }
+});
+</Script>
+</html>
