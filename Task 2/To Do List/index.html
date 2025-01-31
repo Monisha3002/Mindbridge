@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task Timer</h1>
+    <form id="task-form">
+        <input type="text" id="task-title" placeholder="Task Title" required>
+        <textarea id="task-description" placeholder="Task Description" required></textarea>
+        <input type="datetime-local" id="task-estimate-time" required>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <div id="task-list"></div>
+
+    <div id="task-summary">
+        <h3>Task Summary</h3>
+        <p id="completed-tasks">Completed Tasks: 0</p>
+        <p id="pending-tasks">Pending Tasks: 0</p>
+        <p id="completion-rate">Completion Rate: 0%</p>
+        <button id="close-window">Close Window</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

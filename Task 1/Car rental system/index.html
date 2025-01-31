@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script>
+        function selectCar(model, pricePerDay) {
+            const carDetails = { model: model, pricePerDay: pricePerDay };
+            localStorage.setItem('selectedCar', JSON.stringify(carDetails));
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Car Rental</h1>
+        <p>Choose your ride and book now!</p>
+        <a href="admin.html" class="admin">Admin</a>
+    </header>
+
+    <main class="container">
+        <section class="car-list">
+            <article class="car-card">
+                <img src="img1.webp" alt="Car 1" class="car-image">
+                <div class="car-details">
+                    <h2 class="car-title">Toyota Corolla</h2>
+                    <p class="car-price">₹50000/day</p>
+                    <a href="book.html" class="book-now" onclick="selectCar('Toyota Corolla', 50000)">Book Now</a>
+                </div>
+            </article>
+
+            <article class="car-card">
+                <img src="img2.webp" alt="Car 2" class="car-image">
+                <div class="car-details">
+                    <h2 class="car-title">Honda Civic</h2>
+                    <p class="car-price">₹60000/day</p>
+                    <a href="book.html" class="book-now" onclick="selectCar('Honda Civic', 60000)">Book Now</a>
+                </div>
+            </article>
+
+            <article class="car-card">
+                <img src="img3.avif" alt="Car 3" class="car-image">
+                <div class="car-details">
+                    <h2 class="car-title">Ford Mustang</h2>
+                    <p class="car-price">₹100000/day</p>
+                    <a href="book.html" class="book-now" onclick="selectCar('Ford Mustang', 100000)">Book Now</a>
+                </div>
+            </article>
+
+            <article class="car-card">
+                <img src="img4.avif" alt="Car 4" class="car-image">
+                <div class="car-details">
+                    <h2 class="car-title">Chevrolet Camaro</h2>
+                    <p class="car-price">₹120000/day</p>
+                    <a href="book.html" class="book-now" onclick="selectCar('Chevrolet Camaro', 120000)">Book Now</a>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

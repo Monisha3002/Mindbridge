@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="login">
+      <h1>Login</h1>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+      <button id="startQuiz">Start Quiz</button>
+    </div>
+
+    <div id="quiz" style="display: none;">
+      <h1>Quiz</h1>
+      <div class="quiz">
+        <p class="question" id="questionText">Question text here</p>
+        <ul class="options" id="optionsList">
+        </ul>
+        <button id="nextQuestion">Next</button>
+      </div>
+    </div>
+
+    <div id="result" style="display: none;">
+      <h1>Result</h1>
+      <div class="result">
+        <p>Score: <span id="score">0</span></p>
+        <table>
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th>Your Answer</th>
+              <th>Correct Answer</th>
+            </tr>
+          </thead>
+          <tbody id="resultTable">
+          </tbody>
+        </table>
+        <button id="viewRanking">View Ranking</button>
+      </div>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+      <h1>Dashboard</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody id="dashboardTable">
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
