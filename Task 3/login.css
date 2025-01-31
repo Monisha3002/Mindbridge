@@ -1,12 +1,9 @@
-/* Common styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
-
-/* Login Page specific styles */
 .login-container {
     width: 100%;
     max-width: 400px;
